@@ -13,7 +13,7 @@ VOLUME /tmp
 
 WORKDIR /zuul
 
-ADD target/zuul.jar zuul.jar
+ADD /var/jenkins/workspace/zuulapp/zuul/target/zuul.jar zuul.jar
 
 RUN bash -c 'touch /zuul.jar'
 
