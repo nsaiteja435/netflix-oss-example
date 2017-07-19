@@ -7,11 +7,7 @@ FROM java:8
 MAINTAINER Oreste Luci
 
 # Install netcat
-RUN apt-get update && apt-get install -y netcat
-
-VOLUME /tmp
-
-WORKDIR /zuul
+RUN yum update && yum install -y netcat
 
 ADD target/zuul.jar zuul.jar
 
