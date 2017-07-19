@@ -1,6 +1,7 @@
 #
 # Dockerfile for Service C
 #
+FROM centos:centos7
 
 FROM java:8
 
