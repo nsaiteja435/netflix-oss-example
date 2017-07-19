@@ -10,7 +10,7 @@ MAINTAINER Oreste Luci
 # Install netcat
 RUN apt update && apt install -y netcat
 
-ADD target/zuul.jar zuul.jar
+ADD zuul/target/zuul.jar zuul.jar
 
 RUN bash -c 'touch /zuul.jar'
 
